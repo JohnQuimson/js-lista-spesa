@@ -1,7 +1,6 @@
 'use strict';
 
 const lista = document.querySelector('.list');
-console.log(lista);
 
 const spesa = [
   'Pane',
@@ -24,5 +23,6 @@ while (j < spesa.length) {
   prodotto.classList.add('prodotto');
   prodotto.textContent = spesa[j];
   lista.append(prodotto);
+  console.log(j + ' ' + spesa[j]);
   j++;
 }
